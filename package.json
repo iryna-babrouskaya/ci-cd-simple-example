@@ -7,13 +7,14 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "test-no-watch": "ng test --watch=false",
     "lint": "ng lint",
     "commit": "npx git-cz",
     "code:check": "npx prettier \"src/**/*.{js,ts,html,scss}\" --check --cache",
     "code:fix": "npx prettier \"src/**/*.{js,ts,html,scss}\" --write",
     "style:check": "npx stylelint \"**/*.scss\" --cache",
     "style:fix": "npx stylelint \"**/*.scss\" --fix",
-    "checks": "npm run format:write && npm run stylelint:fix"
+    "checks": "npm run code:fix && npm run style:fix"
   },
   "private": true,
   "dependencies": {

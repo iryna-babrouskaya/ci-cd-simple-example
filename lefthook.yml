@@ -5,6 +5,8 @@ pre-commit:
       run: npm run style:check
     prettier-check:
       run: npm run code:check
+    test:
+      run: npm run test-no-watch
 
 # EXAMPLE USAGE:
 #
